@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML and JS Demo</title>
+    <title>HTML and JS Random Quote</title>
 </head>
 
 <body>
@@ -16,20 +16,26 @@
   <p id="quoteHere"></p>
 
   <script>
+    // Array of famous quotes
     var quotes = [
-        "The best way to predict the future is to invent it. - Alan Kay",
+        "The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela",
         "The only way to do great work is to love what you do. - Steve Jobs",
-        "It always seems impossible until it's done. - Nelson Mandela",
+        "If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt",
         "Believe you can and you're halfway there. - Theodore Roosevelt",
-        "Strive not to be a success, but rather to be of value. - Albert Einstein"
+        "Life is what happens when you're busy making other plans. -John Lennon",
+        "Strive not to be a success, but rather to be of value. - Albert Einstein",
+        "When you reach the end of your rope, tie a knot in it and hang on. -Franklin D. Roosevelt",
+        "Always remember that you are absolutely unique. Just like everyone else. -Margaret Mead",
+        "It is during our darkest moments that we must focus to see the light. -Aristotle",
+        "Don't judge each day by the harvest you reap but by the seeds that you plant. -Robert Louis Stevenson"
       ];
 
-      // Function to generate a random quote from the array
+      // Function to get a random quote from the array above
       function getRandomQuote() {
         return quotes[Math.floor(Math.random() * quotes.length)];
       }
 
-      // Function to display the quote on the HTML page
+      // Function to display the quote on the HTML page when button is clicked
       function displayQuote() {
         var quote = getRandomQuote();
         document.getElementById("quoteHere").innerHTML = quote;
